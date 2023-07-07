@@ -1,0 +1,94 @@
+/* Reset styles */
+:root {
+  --text-color: #141414;
+  --dark-green-color: #a1c487;
+  --light-green-color: #eaf7e5;
+  --orange-color: #fc8a11;
+  --light-peach-color: #faf3e7;
+  --light-grey-color: #f3f3f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--text-color);
+  font-style: normal;
+
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section {
+  padding: 40px 0;
+}
+.text {
+  letter-spacing: -0.56px;
+  line-height: 1.33;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .text {
+    letter-spacing: -0.72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .section {
+    padding: 62px 0;
+  }
+}
